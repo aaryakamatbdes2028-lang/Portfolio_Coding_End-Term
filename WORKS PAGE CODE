@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Page</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- POPPINS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #2f2f31;
+    }
+    .top_bar {
+      height: 60px;
+      width: 100%;
+      background-color: #1f1f27;
+      display: flex;
+      align-items: center;
+      gap: 780px;
+      padding-left: 15%;
+      padding-right: 10%;
+      box-shadow: 0 0 10px #ff9a00;
+    }
+
+    .left_side_container {
+      height: 42px;
+      width: 30%;
+      background-color: #1f1f27;
+
+      color: blanchedalmond;
+
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+    }
+    .left_side_container h1 {
+      font-size: medium;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      background-color: #1f1f27;
+
+      color: blanchedalmond;
+    }
+
+    .right_side_container {
+      height: 42 px;
+      width: 40%;
+      /* background-color: antiquewhite; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .right_side_container a {
+      font-size: small;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      background-color: #1f1f27;
+
+      color: blanchedalmond;
+    }
+
+    .btns {
+      background-color: #1f1f27;
+
+      height: 60px;
+      width: 140px;
+      gap: 40px;
+      text-decoration: none;
+      color: blanchedalmond;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0px;
+    }
+
+    .btns:hover {
+      background-color: blanchedalmond;
+      color: #ff8400;
+    }
+
+    /* Work Section */
+    .work_section {
+      height: 450px;
+      background: blanchedalmond;
+      padding: 60px 20px;
+      color: rgb(39, 39, 39);
+      box-shadow: 0 5px 10px #ff9a00;
+      position: relative;
+      padding-bottom: 120px;
+    }
+
+    .tagline {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .yellow_text {
+      color: #ff9900f7;
+      font-style: italic;
+    }
+
+    .main_title {
+      font-size: 100px;
+      font-weight: 800;
+      margin-top: 10px;
+    }
+
+    .yellow_card {
+      height: 80px;
+
+      background: #ff9a00;
+      color: #141312;
+      width: 60%;
+      margin: 10px auto;
+      padding: 15px 18px;
+      box-shadow: #eaa56d;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: italic;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -40px;
+      z-index: 10;
+      width: 60%;
+    }
+
+    .info_text {
+      max-width: 850px;
+      margin: 25px auto;
+      font-size: 18px;
+      line-height: 2;
+      color: #3e3e3ef7;
+    }
+
+    .yellow_text2 {
+      color: #ff9900f7;
+
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    .mini_black_section {
+      height: 150px;
+      background-color: #2f2f31;
+      width: 100%;
+    }
+    .category_strip {
+      background: blanchedalmond;
+      padding: 12px 0;
+      border-top: 4px solid #777;
+      box-shadow: 0 0 20px #ff9a00;
+    }
+
+    .category_item {
+      color: #ff9900f7;
+      padding: 12px 0;
+      font-size: 14px;
+      font-weight: 500;
+      border-right: 1px solid #555;
+    }
+
+    .category_item:last-child {
+      border-right: none;
+    }
+    .outer_container {
+      background-color: #121213;
+      height: 400px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+      gap: 20px;
+    }
+
+    .inner_container {
+      background-color: blanchedalmond;
+      border-radius: 10px;
+      height: 300px;
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      /* box-shadow: 0 0 20px #ff9a00; */
+    }
+    .image_container {
+      /* background-color: bisque; */
+      margin-top: 20px;
+      margin-left: 20px;
+      height: 260px;
+      width: 50%;
+      border-radius: 5px;
+      /* box-shadow: 0 4px 4px rgb(167, 154, 96); */
+      display: flex;
+      justify-content: center; /* centers image horizontally */
+      align-items: center; /* centers image vertically */
+    }
+    .img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      /* box-shadow: 0 4px 4px rgb(167, 154, 96); fills the box, cropping if needed */
+    }
+
+    .text_container {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 20px;
+      margin-right: 20px;
+      box-shadow: 0 0 10px rgb(193, 198, 127);
+      background-color: #181818;
+      color: blanchedalmond;
+      height: 260px;
+      width: 50%;
+      border-radius: 10px;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn {
+      height: 40px;
+      width: 100px;
+      text-decoration: none;
+      background-color: #ff9900f7;
+      color: blanchedalmond;
+      border-radius: 5px;
+      box-shadow: 0 4px 4px rgb(46, 44, 44);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn:hover {
+      background-color: blanchedalmond;
+      color: rgb(20, 19, 19);
+    }
+  </style>
+  <body>
+    <div class="top_bar">
+      <div class="left_side_container">
+        <h1>AARYAA KAMAT</h1>
+      </div>
+      <!-- tabs in top bar -->
+      <div class="right_side_container">
+        <a href="portfolio_new.html" class="btns">About</a>
+        <a href="projects_section.html" class="btns">Projects</a>
+        <a href="services.html" class="btns">Services</a>
+        <a href="contact_me.html" class="btns">Contact</a>
+      </div>
+    </div>
+    <!-- Work Section-->
+    <div class="work_section">
+      <div class="container text-center">
+        <p class="tagline">
+          Design that
+          <span class="yellow_text">solves, simplifies, and speaks.</span>
+        </p>
+
+        <h1 class="main_title">Welcome to my works!</h1>
+
+        <div class="yellow_card">
+          A collection of projects shaped by curiosity, experimentation, and
+          thoughtful visual storytelling.
+        </div>
+
+        <p class="info_text">
+          This <span class="yellow_text2">portfolio</span> is structured into
+          four sections: <span>Illustrations</span>, <span>Poster Design</span>,
+          <span>Brand Design</span>, and <span>Creative Projects</span>. These
+          categories represent the range of my practice and the kind of work I’m
+          passionate about creating.
+        </p>
+      </div>
+    </div>
+
+    <!--Mini Grey Area Section  -->
+    <div class="mini_black_section"></div>
+
+    <!-- Category strip -->
+    <section class="category_strip">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col category_item">ILLUSTRATIONS</div>
+          <div class="col category_item">POSTERS</div>
+          <div class="col category_item">BRAND DESIGN</div>
+          <div class="col category_item">CREATIVES</div>
+        </div>
+      </div>
+    </section>
+    <div class="outer_container">
+      <div class="inner_container">
+        <div class="image_container">
+          <img src="ppt poster-04.jpg" class="img" />
+        </div>
+        <div class="text_container">
+          <h2>POSTER DESIGN</h2>
+          <p>
+            <i> Rococo themed wine label design and poster</i>
+          </p>
+          <br />
+          <br />
+
+          <div class="Buttons">
+            <a href="CIA1_AaryaaKamat_CD_B.pdf_compressed.pdf" class="btn"
+              ><b>VIEW </b></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="inner_container">
+        <div class="image_container">
+          <img src="Untitled-5-04.jpg" class="img" />
+        </div>
+        <div class="text_container">
+          <h2>POSTER DESIGN</h2>
+
+          <p><i> Renaissance themed tinder advertisement poster</i></p>
+          <br />
+          <br />
+
+          <div class="Buttons">
+            <a href="CIA1_AaryaaKamat_CD_B.pdf_compressed.pdf" class="btn"
+              ><b>VIEW </b></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="inner_container">
+        <div class="image_container">
+          <img
+            src="WhatsApp Image 2025-11-28 at 3.04.16 PM (1).jpeg"
+            class="img"
+          />
+        </div>
+        <div class="text_container">
+          <h2>BRAND DESIGN</h2>
+
+          <p>
+            <i>
+              Aara- An Indian luxury brand design mastering in handbags and
+              fragnances.
+            </i>
+          </p>
+          <br />
+
+          <div class="Buttons">
+            <a
+              href="AARA- BRAND DESIGN - DESIGN STUDIO - FINAL DELIVERABLES.pdf"
+              class="btn"
+              ><b>VIEW </b></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category_strip">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col category_item">ILLUSTRATIONS</div>
+          <div class="col category_item">POSTERS</div>
+          <div class="col category_item">BRAND DESIGN</div>
+          <div class="col category_item">CREATIVES</div>
+        </div>
+      </div>
+    </div>
+    <div class="outer_container">
+      <div class="inner_container">
+        <div class="image_container">
+          <img src="Screenshot 2025-11-28 190127.png" class="img" />
+        </div>
+        <div class="text_container">
+          <h2>POSTER DESIGN</h2>
+          <p>
+            <i> The Three Wishes- Posters designed for a live action play.</i>
+          </p>
+          <br />
+          <br />
+
+          <div class="Buttons">
+            <a href="EA2_Aaryaa Kamat_Dropbox_Imaging2_2025 (1).pdf" class="btn"
+              ><b>VIEW </b></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="inner_container">
+        <div class="image_container">
+          <img
+            src="c:\Users\AARYAA KAMAT\Pictures\Screenshots\Screenshot 2025-11-28 190323.png"
+            class="img"
+          />
+        </div>
+        <div class="text_container">
+          <h2>PRODUCT DESIGN</h2>
+
+          <p><i> ReTip- A reusable cotton swab design.</i></p>
+          <br />
+          <br />
+
+          <div class="Buttons">
+            <a
+              href="CIA 3- Circular Design Re-design a Product with a Lifecycle Plan (Part B).pdf"
+              class="btn"
+              ><b>VIEW </b></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="inner_container">
+        <div class="image_container">
+          <img
+            src="WhatsApp Image 2025-11-28 at 3.04.16 PM (1).jpeg"
+            class="img"
+          />
+        </div>
+        <div class="text_container">
+          <h2>BRAND DESIGN</h2>
+
+          <p>
+            <i>
+              Aara- An Indian luxury brand design mastering in handbags and
+              fragnances.
+            </i>
+          </p>
+          <br />
+
+          <div class="Buttons">
+            <a
+              href="AARA- BRAND DESIGN - DESIGN STUDIO - FINAL DELIVERABLES.pdf"
+              class="btn"
+              ><b>VIEW </b></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category_strip">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col category_item">ILLUSTRATIONS</div>
+          <div class="col category_item">POSTERS</div>
+          <div class="col category_item">BRAND DESIGN</div>
+          <div class="col category_item">CREATIVES</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
