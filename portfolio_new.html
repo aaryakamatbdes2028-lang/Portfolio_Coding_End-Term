@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+<!-- bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ /* top bar */
+     .top_bar {
+      height: 60px;
+      width: 100%;
+      background-color:  #1f1f27;
+      display: flex;
+      align-items: center;
+      gap: 780px;
+      padding-left: 15%;
+      padding-right: 10%;
+      box-shadow: 0 0 10px #ff9a00;
+    }
+
+    .left_side_container {
+      height: 42px;
+      width: 30%;
+      background-color:  #1f1f27;
+
+      color: blanchedalmond);
+
+      margin-left: 10px;
+      display:flex;
+      align-items:center;
+      justify-content:left;
+    }
+    .left_side_container h1 {
+      font-size: medium;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      background-color:  #1f1f27;
+
+      color: blanchedalmond;
+    }
+
+    .right_side_container {
+      height: 42 px;
+      width: 40%;
+      /* background-color: antiquewhite; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .right_side_container a {
+      font-size: small;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      background-color:  #1f1f27;
+
+      color: blanchedalmond);
+    }
+
+    .btns {
+      background-color:  #1f1f27;
+
+      height: 60px;
+      width: 140px;
+      gap: 40px;
+      text-decoration: none;
+      color: blanchedalmond;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0px;
+    }
+
+    .btns:hover {
+      background-color: blanchedalmond;
+      color:  #ff8400;
+    }
+/* hello section */
+    .big_outer_container {
+      height: 500px;
+      width: 100%;
+      /* background-color: blanchedalmond; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      
+      box-shadow: 0 0 20px #ff9a00;
+    } 
+ .big_outer_container {
+        background-image: url('2028888.jpg'); 
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+    
+     .hero-section {
+       
+        
+     width: 60%;
+     margin-left: 200px;
+      padding: 60px 0;
+      background-color: #fff4ac75;
+      box-shadow:  rgb(255, 174, 0);
+      height: 400px;
+      border-radius: 20px;
+      
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    .col-lg-6 {
+    margin-left: 300px;  
+}
+   
+    .hello {
+        margin-top: -40px;
+      font-size: 80px;
+      font-weight: bolder;
+      color: #ff9a00;
+      font-weight: 800;
+     
+      
+    }
+
+    .name {
+        font-size: 50px;
+      font-weight: bolder;
+      
+      font-weight: 700;
+      color: #000;
+     
+    }
+
+    .intro-text {
+      width: 90%;
+      margin-top: 10px;
+      
+    }
+    .hero-image {
+        height: 480px;
+  width: 45%;
+ margin-left: -50px;
+  filter: drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.3));
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: -120px;  
+  z-index: 10;
+
+}
+.hero-arrow {
+    position: absolute;
+    bottom: -130px;
+    left: -450px;
+    width: 500px;
+    height: 400px;
+}
+    
+    .search-bar h4{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: italic;
+      
+      color: #ffd689;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-bar {
+    height: 60px;
+    width: 600px;
+    border-radius: 30px;
+    padding-left: 20px;
+    border: 2px solid #ffffff;
+    background-color: #ff9a00;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-icon {
+    font-size: 24px;
+    color: #fffbe8;  /* light yellowish white */
+}
+
+.search-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    color: #ffe1a8;
+    margin: 0;
+    padding: 0;
+}
+/* education middle section */
+    .education-section {
+        height: 800px;
+        width: 100%;
+     padding: 20px;
+       background-color: #1f1f27; 
+      color: #dcdcdc;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0 0 10px #ff9a00;
+      
+    }
+.education_container {
+    width: 50%;
+   
+    margin-top: 0px;
+    padding: 70px;
+    margin-left: 30px;
+
+}
+    .skill_container {
+                margin-right: 0%;
+
+    width: 50%;
+    
+    
+    }
+    
+    .skills-section {
+        margin-right: 0%;
+        height: 180px;
+  background: #5a5958;
+  padding: 30px;
+  border-radius: 15px 0 0 15px;
+  margin-right: -20px;
+  margin-top: 120px;
+
+    }
+
+.skill {
+   
+  background: #c7c8c2;
+  color: #5a5958;
+  padding: 20px 20px;
+  gap: 30px;
+  border-radius: 12px;
+  margin-right: 10px;
+  font-size: medium;
+  font-weight: 800;
+}
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .timeline {
+      margin-top: 20px;
+    }
+
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      background: #ffb84c;
+      border-radius: 50%;
+      margin-top: 6px;
+    }
+/* yellow card section */
+    .third_container {
+        background-color:blanchedalmond;
+        height: 400px;
+        width: 100%;
+        box-shadow: 0 0 10px #ff9a00;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-box {
+        width: 60%;
+        height: 500px;
+  padding: 60px 0;
+}
+
+.about-card {
+   margin-left: -300px;
+  background: #f5b45b;
+padding: 100px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 300px;
+  text-align: justify;
+  font-size: 18px;
+  font-style: italic;
+  padding: 60px;
+}
+
+.about-card .highlight {
+  color: #b04600;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.view-more {
+
+  display: block;
+  margin-top: 10px;
+  font-size: larger;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  color: #111010;
+}
+
+.hobbies-section {
+
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+
+}
+.section-title{
+    margin-left: 0px;
+    
+    text-align: left;
+    
+}
+
+.hobby-icon {
+  font-size: 40px;
+  color: #ff9a00; 
+  margin-bottom: 20px;
+  row-gap: 20px;
+}
+
+.icon-row p {
+  color: #ffce87;
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+
+.cat {
+   
+  background: #d89f4e;
+  padding: 12px 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.cat2 {
+  background: #8f8f8f;
+  color: #111010;
+  padding: 12px 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.third_container {
+  position: relative;   
+  /* background-color: blanchedalmond; */
+  height: 380px;
+  width: 100%;
+  box-shadow: 0 0 10px #ff9a00;
+}
+ .third_container {
+        background-image: url('2028888.jpg'); 
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.about-box {
+  position: absolute;
+  top: -120px;       
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+}
+
+.about-card {
+  background: #f5b45b;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+  </style>
+  <body>
+    <!-- big top bar container -->
+    <div class="top_bar">
+      <div class="left_side_container">
+        <h1><b>AARYAA KAMAT</b></h1>
+      </div>
+      <!-- tabs in top bar -->
+      <div class="right_side_container">
+        
+        <a href="portfolio_new.html" class="btns">About</a>
+        <a href="projects_section.html" class="btns">Projects</a>
+        <a href="services.html" class="btns">Services</a>
+        <a href="contact_me.html" class="btns">Contact</a>
+      </div>
+    </div>
+
+    <!-- section 2 -->
+    <div class="big_outer_container">
+      <div class="hero-section">
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="hello">
+              Hello!! <br />
+              <span class="name">I’m Aaryaa!</span>
+            </h1>
+
+            <p class="intro-text">
+              I’m an aspiring Communication Designer who finds inspiration in
+              nature, travel, and the small moments that shape how we see the
+              world.
+            </p>
+            
+            <div class="search-bar d-flex align-items-center">
+    <i class="bi bi-search search-icon"></i>
+    <h4 class="search-text">Who's the designer everyone's talking about?</h4>
+</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="hero-image">
+                <img src="WhatsApp Image 2025-11-16 at 7.26.45 PM.jpeg" class="hero-image" alt="Aaryaa Picture" />
+                <img src= "image-removebg-preview (33).png" class="hero-arrow" alt="" />
+              </div>
+    </div>
+
+    
+    <div class="education-section">
+      <div class="education_container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div>
+              <h5>ATLAS SKILLTECH UNIVERSITY – ISDI</h5>
+              <p>Currently pursuing Bachelor of Design <span>2028</span></p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div>
+              <h5>UNIVERSITY OF ARTS LONDON</h5>
+              <p>Graphic Communication Design Course <span>2025</span></p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div>
+              <h5>BHAIVANI SHANKAR JUNIOR COLLEGE OF SCIENCE</h5>
+              <p>Vidyavihar – PCMB <span>2024</span></p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div>
+              <h5>I.E.S MANIK VIDYAMANDIR</h5>
+              <p>ICSE Board – Science <span>2022</span></p>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    <div class="skill_container">
+    <div class="skills-section">
+          
+            <h2 class="section-title">Technical Skills</h2>
+
+            <div class="skills-box">
+              <span class="skill">Ps</span>
+              <span class="skill">Ai</span>
+              <span class="skill">Id</span>
+              <span class="skill">Pr</span>
+              <span class="skill">Figma</span>
+            </div>
+      </div> 
+      <div class="categories mt-4">
+              <span class="cat">TYPOGRAPHY</span>
+              
+              <span class="cat">LOGO DESIGN</span>
+
+              <span class="cat">PACKAGING</span>
+              <span class="cat">VISUAL DESIGN</span>
+              
+            </div>
+            <BR>
+            <div class="categories mt-4">
+              <span class="cat2">LEADERSHIP</span>
+              
+              <span class="cat2">COMMUNICATION</span>
+
+              <span class="cat2">ADAPTABILITY</span>
+              <span class="cat2">QUALITY</span>
+              
+            </div>
+            
+            <div class="hobbies-section">
+                <br>
+  <h2 class="section-title">Hobbies</h2>
+<br>
+  <div class="row text-center icon-row">
+
+    <div class="col">
+      <i class="bi bi-camera-fill hobby-icon"></i>
+      <p>Photography</p>
+    </div>
+
+    <div class="col">
+      <i class="bi bi-palette-fill hobby-icon"></i>
+      <p>Painting</p>
+    </div>
+
+    <div class="col">
+      <i class="bi bi-person-walking hobby-icon"></i>
+      <p>Dancing</p>
+    </div>
+
+    <div class="col">
+      <i class="bi bi-book-fill hobby-icon"></i>
+      <p>Reading</p>
+    </div>
+
+    <div class="col">
+      <i class="bi bi-music-note-beamed hobby-icon"></i>
+      <p>Singing</p>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+     </div>
+
+    </div>
+     
+      <div class="third_container">
+     
+        <div class="about-box">
+          
+            <div class="about-card">
+              <p>
+                My work blends curiosity, storytelling, and design thinking as I
+                explore new ways to create meaningful, clear, and emotionally
+                grounded experiences... 
+                <span class="highlight"
+                  >I enjoy learning, experimenting, and taking on
+                  challenges</span
+                >
+                that push me to grow as a designer.
+              </p>
+              <a href="#" class="view-more">view more</a>
+            </div>
+            
+          </div>
+          
+          </div>
+          
+
+     
+  </body>
+</html>
